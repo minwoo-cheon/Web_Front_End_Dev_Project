@@ -1,0 +1,114 @@
+
+
+@import "reset.css";    /*reset.css파일을 불러오게된다.*/
+
+
+body {                                  /*이거 만들고*/
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: gainsboro;
+    padding: 20px;                      /*top과 bottom 패딩을 20px 준다.*/
+    font-family: system-ui;             /*코드를 작성하다보면 자동완성에 나오는걸로하면된다.*/ /*font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+}
+
+canvas {
+    width: 800px;
+    height: 800px;
+    background-color: white;        /*테두리 없애고 색상을 희색으로 바꿔준다.*/
+    border-radius: 10px;            /*모서리를 둥글게 만든다.*/
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns {                             /*버튼들의 스타일*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.color-options {                    /*색상옵션의 스타일*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;            /*중앙으로 정렬*/
+}
+
+.color-option {                 /*div 칼라들을 보이게한다.*/
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;        /*옵션색상을 둥글게 만든다.*/
+    cursor: pointer;
+    border: 5px solid white;    /*옵션색상의 테두리를 5픽셀 흰색으로 만든다.*/
+    transition:transform ease-in-out .1s;
+}
+
+.color-option:hover {
+    transform: scale(1.2);      /*마우스를 올려놓으면 옵션색상의 크기가 1.2배가됨.*/
+}
+
+input#color {               /*사용자가 원하는 색상 찾아서 선택하는 옵션의 스타일링*/
+    background-color: white;
+}
+
+button, label {         /*label태그도 동일하게 스타일링 해준다.*/
+    all: unset;         /*현재 디폴트상태에서 이미 존재하는 스타일을 제거해준다.*/
+    padding: 10px 0px;
+    text-align: center; /*텍스트의 위치를 중앙으로 정렬*/
+    background-color: royalblue;
+    color: white;       /*텍스트 색상*/
+    font-weight: 500;
+    cursor: pointer;    /*마우스가 올라오면 마우스포인터 모양을 변화시킨다.*/
+    border-radius: 10px;
+    transition: opacity linear .1s;
+}
+
+button:hover {          /*마우스를 버튼 위에 올릴때*/
+    opacity: 0.85;
+}
+
+input#file {
+    display: none;      /*원래있던 파일불러오기를 안보이게한다.*/
+}
+
+input#text {            /*텍스트 입력칸을 스타일링한다.*/
+    all: unset;
+    padding: 10px 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

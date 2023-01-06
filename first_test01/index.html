@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="x">
+        <div id="g" onclick="f_clickFunc7()">
+            <h2 id="test7" onclick="test7()">7</h2>
+        </div>
+        <div id="h" onclick="f_clickFunc8()">
+            <h2 id="test8" onclick="test8()">8</h2>
+        </div>
+        <div id="i" onclick="f_clickFunc9()">
+            <h2 id="test9" onclick="test9()">9</h2>
+        </div>
+    </div>
+    <div class="x">
+        <div id="d" onclick="f_clickFunc4()">
+            <h2 id="test4" onclick="test4()">4</h2>
+        </div>
+        <div id="e" onclick="f_clickFunc5()">
+            <h2 id="test5" onclick="test5()">5</h2>
+        </div>
+        <div id="f" onclick="f_clickFunc6()">
+            <h2 id="test6" onclick="test6()">6</h2>
+        </div>
+    </div>
+    <div class="x">
+        <div id="a" onclick="f_clickFunc1()">
+            <h2 id="test1" onclick="test1()">1</h2>
+        </div>
+        <div id="b" onclick="f_clickFunc2()">
+            <h2 id="test2" onclick="test2()">2</h2>
+        </div>
+        <div id="c" onclick="f_clickFunc3()">
+            <h2 id="test3" onclick="test3()">3</h2>
+        </div>
+    </div>
+    <script>
+	
+        function f_clickFunc1(){
+            alert('에펠탑');
+            var counterVal = 0;
+            num == ++counterVal
+            counterplay(num);
+
+        }
+        function counterplay(Val){
+            if(Val%2 == 1){
+                document.getElementById("a").style.border = "3px solid #f00";
+            }
+            if(Val%2 == 0){
+                document.getElementById("a").style.border = "3px solid #000";
+            }     
+        }
+        
+    </script>
+    <script>
+	
+        function f_clickFunc2() {
+            alert('빅 벤');
+            document.getElementById("b").style.border = "3px solid #f00";
+        }
+        
+    </script>
+    <script>
+	
+        function f_clickFunc3() {
+            alert('콜로세움');
+            document.getElementById("c").style.border = "3px solid #f00";
+        }
+        
+    </script>
+    <script>
+	
+        function f_clickFunc4() {
+            alert('자유의 여신상');
+            document.getElementById("d").style.border = "3px solid #f00";
+        }
+        
+    </script>
+    <script>
+	
+        function f_clickFunc5() {
+            alert('피사의 사탑');
+            document.getElementById("e").style.border = "3px solid #f00";
+        }
+        
+    </script>
+    <script>
+	
+        function f_clickFunc6() {
+            alert('자금성');
+            document.getElementById("f").style.border = "3px solid #f00";
+        }
+        
+    </script>
+    <script>
+	
+        function f_clickFunc7() {
+            alert('타지마할');
+            document.getElementById("g").style.border = "3px solid #f00";
+        }
+        
+    </script>
+    <script>
+	
+        function f_clickFunc8() {
+            alert('스핑크스');
+            document.getElementById("h").style.border = "3px solid #f00";
+        }
+        
+    </script>
+    <script>
+	
+        function f_clickFunc9() {
+            alert('큰부처님');
+            document.getElementById("i").style.border = "3px solid #f00";
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        function test1() {
+        var h2 = document.getElementById("test1");
+        var n = Number(h2.innerHTML);
+        h2.innerHTML = n + 1;
+        }
+    </script>
+    <script type="text/javascript">
+        function test2() {
+        var h2 = document.getElementById("test2");
+        var n = Number(h2.innerHTML);
+        h2.innerHTML = n + 1;
+        }
+    </script>
+    <script type="text/javascript">
+        function test3() {
+        var h2 = document.getElementById("test3");
+        var n = Number(h2.innerHTML);
+        h2.innerHTML = n + 1;
+        }
+    </script>
+    <script type="text/javascript">
+        function test4() {
+        var h2 = document.getElementById("test4");
+        var n = Number(h2.innerHTML);
+        h2.innerHTML = n + 1;
+        }
+    </script>
+    <script type="text/javascript">
+        function test5() {
+        var h2 = document.getElementById("test5");
+        var n = Number(h2.innerHTML);
+        h2.innerHTML = n + 1;
+        }
+    </script>
+    <script type="text/javascript">
+        function test6() {
+        var h2 = document.getElementById("test6");
+        var n = Number(h2.innerHTML);
+        h2.innerHTML = n + 1;
+        }
+    </script>
+    <script type="text/javascript">
+        function test7() {
+        var h2 = document.getElementById("test7");
+        var n = Number(h2.innerHTML);
+        h2.innerHTML = n + 1;
+        }
+    </script>
+    <script type="text/javascript">
+        function test8() {
+        var h2 = document.getElementById("test8");
+        var n = Number(h2.innerHTML);
+        h2.innerHTML = n + 1;
+        }
+    </script>
+    <script type="text/javascript">
+        function test9() {
+        var h2 = document.getElementById("test9");
+        var n = Number(h2.innerHTML);
+        h2.innerHTML = n + 1;
+        }
+    </script>
+    
+        <h3><center>JavaScript Click Counter</center></h3>
+    <div>
+        <center><h3 id="counter-label">0</h3></center>
+    </div>
+    <center>
+        <div>
+            <button onclick="incrementClick()">Click Me</button>
+            <button onclick="resetCounter()">Reset</button>
+        </div>
+    </center>
+    <script>
+        var counterVal = 0;
+
+    function incrementClick() {
+        updateDisplay(++counterVal);
+    }
+
+    function resetCounter() {
+        counterVal = 0;
+        updateDisplay(counterVal);
+    }
+
+    function updateDisplay(val) {
+        document.getElementById("counter-label").innerHTML = val;
+    }
+    </script>
+        
+</body>
+</html>

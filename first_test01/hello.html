@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리집 가족구성원</title>
+</head>
+<body>
+    <img src="my family.jpg" alt="my family picture" width="500px">
+    <img src="my picture.jpg" alt="my picture" width="200px" >
+    <br>
+    <form action="/Sign In/">
+        <p>
+            <label for="username">Enter a User Name:</label>
+            <input id="username" type="text" placeholder="User Name">
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input id="password" type="password" placeholder="password">
+        </p>
+        <p>
+            <label>
+                Enter a Number:
+                <input type="number" placeholder="enter a number">
+            </label>
+        </p>
+        <p>
+            <label>
+                Enter a Color:
+                <input type="color">
+            </label>
+        </p>
+    </form>
+    <hr>
+    <p>&lt;가족구성원(도표)&gt;</p>
+    <table>
+        <theader>
+            <tr>
+                <th colspan="2">부모</th>
+                <th colspan="3">자녀</th>
+            </tr>
+            <tr>
+                <th>부</th>
+                <th>모</th>
+                <th>장남</th>
+                <th>차남</th>
+                <th>막내</th>
+            </tr>
+            <tr>
+                <th>천유승</th>
+                <th>고갑녀(보경)</th>
+                <th>천민규</th>
+                <th>천민우(현태&#9996;)</th>
+                <th>천민진</th>
+            </tr>
+        </theader>
+    </table>
+    <hr>
+    <section>
+        <div style="border: 1px solid gold; float: left; width: 33%;">
+            <p>아빠가 선택한 단어들</p>
+            <ol>
+                <li>꿈</li>
+                <li>희망</li>
+                <li>소망</li>
+                <li>사랑</li>
+                <li>행복</li>
+            </ol>
+            <ul>
+                <li>진달래꽃</li>
+                <li>튤립</li>
+                <li>동백꽃</li>
+                <li>매화꽃</li>
+                <li>무궁화꽃</li>
+            </ul>
+        </div>
+        <div style="border: 1px solid red; float: left; width: 33%;">
+            <p>엄마가 선택한 숫자들</p>
+                <ul>
+                    <li>3</li>
+                    <li>13</li>
+                    <li>23</li>
+                    <li>33</li>
+                    <li>43</li>
+                    <li>53</li>
+                </ul>
+                <p>내가선택한것</p>
+                <ol>
+                    <li>H<SUB>2</SUB>O 물은 지표의 71 %를 덮고 있다. 바다는 전체에서 97.2%를 차지한다.</li>
+                    <li>X<SUP>2</SUP>+Y<SUP>2</SUP>=R<SUP>2</SUP></li>
+                    <li>만물은 원자로 이루어져있다</li>
+                </ol>
+        </div>
+        <div style="border: 1px solid blue; float: left; width: 33%;">
+            <b>가족 ver.2</b><br>
+            엄마가 너무 바빠<br>
+            엄마를 새로 주문했다<br>
+            그리하여 엄마2호 <br>
+            엄마 1호는 열심히 회사 다니고<br> 
+            집에 오면 열심히 잠을 잔다<br> 
+            내기 너무 바빠<br>
+            아들을 새로 주문했다<br>
+            그리하여 아들 2호<br>
+            나는 열심히 학원 다니고<br>
+            집에 오면 열심히 숙제하다 잠에 든다<br>
+            우리가 이러는 동안<br>
+            엄마 2호 아들 2호는 집에 남아<br>
+            같이 밥도 먹고 소소한 대화도 나눈다<br> 
+            가끔은 산책을 가기도 한다<br>
+            그리하여 우리 몫까지<br> 
+            열심히 가족이 된다<br>
+            진짜 가족이 된다.<br>
+        </div>
+    </section>
+    <section>
+        <h2>입력값들</h2>
+        <p>DO YOU LIKE CAKE?</p>
+        <div>
+            <input type="checkbox" id="like" name="like">
+            <label for="cake">i like cake!!!</label>
+        </div>
+        <div>
+            <input type="checkbox" id="hate" name="hate">
+            <label for="cake">i don't like cake</label>
+        </div>
+    </section>
+    <hr>
+    <p>당신의 옷사이즈를 고르시오.</p>
+        <form action="checkbox">
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="xs"><br>
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m"><br>
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s"><br>
+        </form>
+        <form action="/가위바위보">
+            <p>
+                <label for="가위바위보">가위바위보중 고르시오.</label>
+                <select name="game" id="가위바위보">
+                    <option value="">--Please Choose an option--</option>
+                    <option value="가위">가위</option>
+                    <option value="바위">바위</option>
+                    <option value="보">보</option>
+                </select>
+            </p>
+            <button>Submit</button>
+        </form>
+    <section>
+        <p>레딧 검색엔진</p>
+        <form action="https://www.reddit.com/search">
+            <input type="text" name="q">
+            <button>Search Reddit</button>
+        </form>
+        <p>구글 검색엔진</p>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q">
+            <button>Search Google</button>
+        </form>
+        <p>유튜브 검색엔진</p>
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="search_query">
+            <button>Search Youtube</button>
+        </form>
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <br>
+            <textarea name="Requests?" id="requests" cols="50" rows="15" placeholder="입력하시오"></textarea>
+        </p>
+    </section>
+</body>
+</html>

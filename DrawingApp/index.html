@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="color-options">
+        <input type="color" id="color" />
+        <div class="color-option" style="background-color: #FF0000" data-color="#FF0000"></div>
+        <div class="color-option" style="background-color: #FFC0CB" data-color="#FFC0CB"></div>
+        <div class="color-option" style="background-color: #FF7F00" data-color="#FF7F00"></div>
+        <div class="color-option" style="background-color: #FF00FF" data-color="#FF00FF"></div>
+        <div class="color-option" style="background-color: #FFFF00" data-color="#FFFF00"></div>
+        <div class="color-option" style="background-color: #fffa65" data-color="#fffa65"></div>
+        <div class="color-option" style="background-color: #00FF00" data-color="#00FF00"></div>
+        <div class="color-option" style="background-color: #00FF00" data-color="#00FF00"></div>
+        <div class="color-option" style="background-color: #18dcff" data-color="#18dcff"></div>
+        <div class="color-option" style="background-color: #00FFFF" data-color="#00FFFF"></div>
+        <div class="color-option" style="background-color: #0000FF" data-color="#0000FF"></div>
+        <div class="color-option" style="background-color: #4B0082" data-color="#4B0082"></div>
+        <div class="color-option" style="background-color: #7158e2" data-color="#7158e2"></div>
+        <div class="color-option" style="background-color: #9400D3" data-color="#9400D3"></div>
+        <div class="color-option" style="background-color: #c56cf0" data-color="#c56cf0"></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+        <input id="line-width" type="range" min="1" max="10" value="5" step="0.1" />
+        <button id="mode-btn">Fill</button>
+        <button id="reset-btn">Reset</button>
+        <button id="eraser-btn">Erase</button>
+        <label for="file">
+            Add Photo
+            <input type="file" accept="image/*" id="file" />
+        </label>
+        <input id="text-width" type="range" min="30" max="80" value="55" step="5" />
+        <input type="text" id="text"  placeholder="Add text here.. :)" />
+        <button id="save">Save image</button> 
+    </div>  
+    <script src="app.js"></script>
+</body>
+
+
+</html>

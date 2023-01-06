@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon</title>
+</head>
+<body>
+    <b>Race Registration!</b>
+        <form action="/marathon.php">
+            <div>
+                <label for="first">First Name</label>
+                <input type="text" id="first" name="firstname" required>
+                <label for="last">Last Name</label>
+                <input type="text" id="last" name="lastname" required>
+            </div>
+            <p>Select a Race:</p>
+            <div>
+                <input type="radio" id="5k" name="race" value="funrun">
+                <label for="5k">Fun Run 5k</label><br>
+                <input type="radio" id="half" name="race" value="half">
+                <label for="half">Half Marathon</label><br>
+                <input type="radio" id="full" name="race" value="full">
+                <label for="full">Full Marathon</label><br>
+            </div>
+            <div>
+                <label for="mail">Email</label>
+                <input type="email" id="mail" required>
+                <label for="password">password</label>
+                <input type="password" id="password" required>
+            </div>
+            <div>
+                <label for="age">Select Age Group</label>
+                <select name="age" id="age">
+                    <option value="under18">Under 18</option>
+                    <option value="18~30">18~30</option>
+                    <option value="30~50">30~50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" id="submit" value="제출">
+            </div>
+        </form>
+</body>
+</html>
