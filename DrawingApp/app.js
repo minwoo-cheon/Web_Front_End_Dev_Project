@@ -83,8 +83,8 @@ function onFileChange(event) {
     const image = new Image();
     image.src = url;
     image.onload = function() {
-    ctx.drawImage(image, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-    fileInput.value = null;
+        ctx.drawImage(image, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+        fileInput.value = null;
     }
 }
 function onDoubleClick(event) {
@@ -92,7 +92,7 @@ function onDoubleClick(event) {
     if(text !== "") {
         ctx.save();
         ctx.lineWidth = 1;
-        ctx.font = `bold ${textSize}px serif`;
+        ctx.font = `bold ${textSize}px serif`;  // 폰트 사용자 지정 추가.
         ctx.fillText(text, event.offsetX, event.offsetY);
         ctx.restore();
     }
@@ -129,7 +129,8 @@ fileInput.addEventListener("change", onFileChange);
 saveBtn.addEventListener("click", onSaveClick);
 
 
-
+// 기능 추가하기: 입력글자 폰트 바꿀 수 있게 (유저가 폰트 종류를 바꿀 수 있게)
+// ctx.font = 'bold 48px serif';    <= 여기에 폰트 이름 넣어주면됨
 
 
 
